@@ -4,141 +4,61 @@
         <meta charset="UTF-8">
         <title>Study Easily</title>
         
-        <style>
-            body {
-                background-color:rgb(21, 80, 190)
-            }
-            /* عشان اكبر خط المقوله ولكن ان عايز اخلي الكود بيور html، */
-            /* em { */
-            /* display: block; عشان تضمن إنها واخدة سطر لوحدها ومستريحة */
-            /* font-size: 24px; تقدر تغير الرقم ده (مثلاً 28px أو 32px) لحد ما تظبط الحجم اللي يعجبك */
-            /* margin-top: 15px; مسافة بسيطة تفصلها عن العنوان اللي فوقها */
-            /* }  */
-
-        a {
-            color: white; /* هيخلي اللينكات باللون الأبيض الواضح */
-            text-decoration: none; /* حركة إضافية: بتشيل الخط اللي تحت اللينك عشان شكله يبقى أنظف */
-            font-weight: bold; /* بتخلي الخط سميك وواضح */
-        }
-        
-        a:hover {
-            color: yellow; /* حركة صايعة: لما تقف بالماوس على اللينك لونه هيقلب أصفر! */
-        }
-        </style>
-        
     </head>
+
     <body>
-        <!-- تبع css بيخلي الاسم الموقع او اسم عموما في نص الصفحه من فوق  -->
-        <!-- <div style="text-align: center;">
-        <h1>Study Easily</h1>
-        </div> -->
-        <!-- ========================== -->
-        <h1>#Study Easily# &rarr; <span>Just Focus</span></h1>
-        <!-- <h1>#Study Easily# &rarr; <small>Just Focus</small></h1> -->
-         <em>"Success is the sum of small efforts, repeated day in and day out."</em>
-         <br>
-         <h2>MIND MAP</h2>
 
-         <h3><u>TO DO LIST✅</u></h3>
-         <p><em>"Take care of today, and tomorrow will take care of itself."</em></p>
-         <!-- عايز اعمل checkbox -->
-         <ul>
-             <li><input type="checkbox"> a1 </li>
-             <li><input type="checkbox"> a2 </li>
-             <li><input type="checkbox"> b1 </li>
-             <li><input type="checkbox"> b2 </li>
+        <table border="1" cellpadding="3" cellspacing="2">
+            <caption><b>My First Table</b></caption>
+            <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>country</th>
+            </tr>
+            <!-- <tr> ده لو عايز يكونو الهيدر بتاع الجدول علي شمال ولكن ده"سي اس اس" بس
+                <th style="text-align: left;">name</th>
+                <th style="text-align: left;">age</th>
+                <th style="text-align: left;">country</th>
+            </tr> -->
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>25</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>hassan</td>
+                    <td>19</td>
+                    <td>Egypt</td>
+                </tr>
+                <tr>
+                    <td>Mohammed</td>
+                    <td>30</td>
+                    <td>Saudi Arabia</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!-- <td colspan="2">Total:</td>
+                    <td>3 name</td> انا عايز يكون مفتوحين على بعض يعني مش يكون فاصل خالص بسيطه هنعمل كول سبان تلاته ونسل سطر ونخلي كلو في يطر واحد -->
+                    <!-- <td colspan="3">Total: 3 names</td> !ولكن كدا هيبقو ضمين لبض شكلها هتبقى وحش> -->
+                     
+                    <!-- ??الحل  -->
+                    <!-- <td colspan="2" style="text-align: left;">Total:</td>
+                    <td style="text-align: right;">3 names</td>--> <!-- بص دي حلوه وكل حاجه ولكن بردو لسه فيها شرطه في الاخر-->>
 
-         </ul>
-
-         <h3><u>Weekly Goals ✅</u></h3>
-         <p><em>"A week is where habits become results."</em></p>
-         <!-- عايز اعمل weekly goals -->
-         <ul>
-             <li><input type="checkbox"> كورسات </li>
-             <li><input type="checkbox"> القراءة </li>
-             <li><input type="checkbox"> اللغه </li>
-             <li><input type="checkbox"> الرياضة  </li>
-            
-         </ul>
-
-         <h3><u>Monthly Goals ✅</u></h3>
-         <p><em>"Months build the life that days begin."</em></p>
-            <!-- عايز اعمل monthly goals -->
-         <ul>
-             <li><input type="checkbox"> كورسات </li>
-             <li><input type="checkbox"> القراءة </li>
-             <li><input type="checkbox"> اللغه </li>
-             <li><input type="checkbox"> الرياضة  </li>
-         </ul>
-         <h3><u>Helpful Study Links ✅</u></h3>
-            <ul>
-                <li><a href="https://www.youtube.com/@JamesScholz/">study with James</a></li>
-                <li><a href="https://www.youtube.com/@DroosOnline4u">droos online</a></li>
-                <li><a href="https://www.notion.so/">Notion</a></li>
-                <li><a href="https://www.noisli.com/">Noisli</a></li>
-                <li><a href="https://pomofocus.io/">Pomofocus</a></li>
-            </ul> <!--القفلة -->
-            
-            <img src="motivation.jpg" alt="image motivation"width="300" poster="my_wisdom.mp4" style="border-radius: 12px;">
-            <video src="my_wisdom.mp4" controls width="350" poster="my_wisdom.mp4" style="border-radius: 12px;">
-            Your browser does not support the video tag.
-            </video>
-
-
-        <h4>CS50x</h4>
-        <ul>
-            <!-- <li> <strong>CS50x</strong></li>بدل ما تعمل هيدنج فوق انت ممكن تعمل "ستروج "بدل الهيدنج ده وتشيل الهيدن ولكن الكلمه اللي عموله هتكون في الليست مع الاسابيع  -->
-            <li>week 0 [scratch]</li>
-            <li>week 1 [C]</li>
-            <li>week 2 [algorazem]</li>
-            <li>week 3 [memory]</li>
-        </ul>
-
-        <h4>CS50x</h4>
-        <ol type="1" > <!--  الليست اوردر يعني هتكون بالارقام 1,2,3,4 -->
-
-            <li>week 0 [scratch]</li>
-            <li>week 1 [C]</li>
-            <li>week 2 [algorazem]</li>
-            <li>week 3 [memory]</li>
-        </ol>
-        <!-- طب لو عايزها معكوسه استخدم reversed
-        <ol type="1" reversed>
-        -->
-
-        <h4>CS50x</h4>
-        <ol type="i" reversed> <!--  الليست اوردر يعني هتكون بالارقام الرومانيه i,ii,iii,iv -->
-            <li>week 0 [scratch]</li>
-            <li>week 1 [C]</li>
-            <li>week 2 [algorazem]</li>
-            <li>week 3 [memory]</li>
-        </ol>       
-        <!-- الحروف اليونانيه i or I  <ol type="i"> or <ol type="I"> and we can use reversed too -->
-
-        <dl>
-            <dt>CS50x</dt>
-            <dd>Computer Science course</dd>
-
-            <dt>HTML</dt>
-            <dd>HyperText Markup Language</dd>    
-
-            <dt>CSS</dt>
-            <dd>Cascading Style Sheets</dd>
-        </dl>
-
-        <!-- الحل الاول لو عايز اظبط الصوره في الموقع افضل اعدل في العرض والارتفاع  -->
-            
-        <img src="https://i.pinimg.com/vwebp/1200x/60/32/19/60321920bcc9e4398a4959f48f445ba2.webp" 
-        alt="Image" 
-        width="300" 
-        height="200" 
-        style="border-radius: 12px; object-fit: cover;">
-
-        <!-- الحل الثاني: تحديد العرض فقط مع height: auto
-         لو عايز الصورة كلها تظهر بجمالها من غير ما يتقص منها أي جزء، بتحدد العرض بس، وتخلي الارتفاع يتعدل أوتوماتيك حسب أبعاد الصورة الأصلية     : -->
-        <img src="https://i.pinimg.com/vwebp/1200x/60/32/19/60321920bcc9e4398a4959f48f445ba2.webp" 
-        alt="Image"
-        width="300" 
-        style="border-radius: 12px; height: auto;">
+                    <!-- Flexbox in CSS ولكن انت مش مطالب تفهم دي خالص
+                     افهم بس اللي شرحناه قبل كدا مش لازم الحنيكه -->
+                    <td colspan="3">
+                        <dev style="display: flex; justify-content: space-between;">
+                            <span>Total:</span>
+                            <span>3 names</span>
+                        </dev>
+                    </td>    
+                </tr>
+            </tfoot>
+        </table>
     </body>
 </html>
