@@ -7,56 +7,36 @@
     </head>
 
     <body>
-
-        <table border="1" cellpadding="3" cellspacing="2">
-            <caption><b>My First Table</b></caption>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <caption>This is the first table</caption>
             <thead>
-            <tr>
-                <th>name</th>
-                <th>age</th>
-                <th>country</th>
-            </tr>
-            <!-- <tr> ده لو عايز يكونو الهيدر بتاع الجدول علي شمال ولكن ده"سي اس اس" بس
-                <th style="text-align: left;">name</th>
-                <th style="text-align: left;">age</th>
-                <th style="text-align: left;">country</th>
-            </tr> -->
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>John Doe</td>
-                    <td>25</td>
+                    <td>John</td>
+                    <td>30</td>
                     <td>USA</td>
                 </tr>
                 <tr>
-                    <td>hassan</td>
-                    <td>19</td>
-                    <td>Egypt</td>
+                    <td>Mary</td>
+                    <td>25</td>
+                    <td>Canada</td>
                 </tr>
                 <tr>
-                    <td>Mohammed</td>
-                    <td>30</td>
-                    <td>Saudi Arabia</td>
+                    <td>Mike</td>
+                    <td>35</td>
+                    <td>UK</td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <!-- <td colspan="2">Total:</td>
-                    <td>3 name</td> انا عايز يكون مفتوحين على بعض يعني مش يكون فاصل خالص بسيطه هنعمل كول سبان تلاته ونسل سطر ونخلي كلو في يطر واحد -->
-                    <!-- <td colspan="3">Total: 3 names</td> !ولكن كدا هيبقو ضمين لبض شكلها هتبقى وحش> -->
-                     
-                    <!-- ??الحل  -->
-                    <!-- <td colspan="2" style="text-align: left;">Total:</td>
-                    <td style="text-align: right;">3 names</td>--> <!-- بص دي حلوه وكل حاجه ولكن بردو لسه فيها شرطه في الاخر-->>
-
-                    <!-- Flexbox in CSS ولكن انت مش مطالب تفهم دي خالص
-                     افهم بس اللي شرحناه قبل كدا مش لازم الحنيكه -->
-                    <td colspan="3">
-                        <dev style="display: flex; justify-content: space-between;">
-                            <span>Total:</span>
-                            <span>3 names</span>
-                        </dev>
-                    </td>    
+                    <td colspan="2" style="text-align:left">Total:</td>
+                    <td style="text-align:right">3 names</td>
                 </tr>
             </tfoot>
         </table>
